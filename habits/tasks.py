@@ -9,7 +9,10 @@ from habits.services import send_telegram_message
 def send_habit_reminders():
     now = timezone.localtime()
 
-    habits = Habit.objects.filter(time=now.time())
+    habits = Habit.objects.filter(
+        time__hour=now.hour,
+        time__minute=now.minute,
+    )
 
     for habit in habits:
         if habit.owner.telegram_chat_id:
