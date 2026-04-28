@@ -28,6 +28,10 @@ INSTALLED_APPS = [
     "corsheaders",
     "django_celery_beat",
     "drf_yasg",
+
+    "users",
+    "habits",
+    "telegram_bot",
 ]
 
 MIDDLEWARE = [
