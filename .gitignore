@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.sqlite3
+
+# Django
+media/
+staticfiles/
+
+# Environments
+.env
+.venv/
+venv/
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+
+# Poetry
+poetry.lock
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Coverage
+.coverage
+htmlcov/
+
+# Logs
+*.log
