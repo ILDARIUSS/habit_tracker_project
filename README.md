@@ -1,4 +1,48 @@
-Habit Tracker API
+# Habit Tracker API
 
-Сервис для отслеживания привычек с напоминаниями в Telegram.
-Реализован на Django REST Framework с использованием Celery, Redis и Telegram Bot API.
+## Описание проекта
+
+Habit Tracker API — это backend-приложение для трекера полезных привычек. Проект разработан на Django и Django REST Framework.
+
+Приложение позволяет пользователям создавать привычки, отслеживать их выполнение и получать напоминания через Telegram. Для выполнения отложенных и периодических задач используется Celery, Celery Beat и Redis. В качестве базы данных используется PostgreSQL.
+
+Проект подготовлен к запуску в Docker с использованием Docker Compose. В состав контейнеров входят:
+
+- Django-приложение;
+- PostgreSQL;
+- Redis;
+- Celery worker;
+- Celery Beat;
+- Nginx.
+
+## Основной функционал
+
+В проекте реализованы следующие возможности:
+
+- регистрация и авторизация пользователей;
+- JWT-аутентификация;
+- создание, просмотр, редактирование и удаление привычек;
+- разделение привычек на приятные и полезные;
+- настройка периодичности выполнения привычек;
+- отправка напоминаний через Telegram;
+- выполнение фоновых задач через Celery;
+- периодический запуск задач через Celery Beat;
+- работа с PostgreSQL;
+- запуск проекта через Docker Compose;
+- использование Nginx в качестве прокси-сервера.
+
+## Используемые технологии
+
+- Python 3.13
+- Django
+- Django REST Framework
+- PostgreSQL
+- Redis
+- Celery
+- Celery Beat
+- django-celery-beat
+- Simple JWT
+- Docker
+- Docker Compose
+- Nginx
+- Poetry
